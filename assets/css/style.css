@@ -1,0 +1,32 @@
+.calculadora {
+    width: 80vw;
+    height: 80vh;
+    min-width: 340px;
+    min-height: 620px;
+    max-width: 500px;
+    max-height: 800px;
+}
+
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bordered {
+    border: solid 1px gray;
+}
+
+.calc-display {
+    width: 80%;
+    height: 15%;
+}
+
+.keyboard {
+    width: 80%;
+    height: 60%;
+    border-top: 1px solid gray;
+}
+
+#result {
+    transition: all 1s linear;
+}

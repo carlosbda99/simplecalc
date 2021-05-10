@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/index.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center full-screen">
+        
+        <div class="d-flex calculadora bordered flex-column justify-content-evenly align-items-center rounded">
+            <div class="m-1">
+                <h1>CALCULADORA</h1>
+            </div>
+
+            <div class="d-grid m-2 text-end calc-display bordered rounded">
+                <div class="row m-1">
+                    <span class="fs-4 fw-lighter" id="result"></span>
+                </div>
+
+                <div class="row m-1">
+                    <span class="fs-6" id="current-operation">0</span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-evenly flex-column keyboard m-1">
+                <div class="row">
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('1')">1</button>
+                    </div>
+
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('2')">2</button>
+                    </div>
+
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('3')">3</button>
+                    </div>
+                    
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('+')">+</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('4')">4</button>
+                    </div>
+
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('5')">5</button>
+                    </div>
+
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('6')">6</button>
+                    </div>
+                    
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('-')">-</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('7')">7</button>
+                    </div>
+
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('8')">8</button>
+                    </div>
+
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('9')">9</button>
+                    </div>
+                    
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('*')">*</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="ac()">AC</button>
+                    </div>
+
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('0')">0</button>
+                    </div>
+
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="c()">C</button>
+                    </div>
+                    
+                    <div class="d-grid col-3">
+                        <button class="btn btn-secondary" onclick="addChar('/')">/</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-grid col">
+                        <button class="btn btn-primary" onclick="calcula()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+            <div class="credits">Desenvolvido por: Carlos Henrique</div>
+        </div>
+
+    </div>
+</body>
+</html>
